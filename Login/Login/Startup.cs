@@ -1,4 +1,5 @@
 using Login.Data;
+using Login.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,11 +34,13 @@ namespace Login
                x => x.UseSqlServer(Configuration.GetConnectionString("UserConnection")));
             services.AddIdentity<IdentityUser<int>, IdentityRole<int>>()
                 .AddEntityFrameworkStores<UserContext>();
+            services.AddScoped<UsuarioService, UsuarioService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Login", Version = "v1" });
             });
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -68,3 +68,11 @@ E:\ApiLogin\Login\Login\obj\Debug\net5.0\refint\Login.dll
 E:\ApiLogin\Login\Login\obj\Debug\net5.0\Login.pdb
 E:\ApiLogin\Login\Login\obj\Debug\net5.0\Login.genruntimeconfig.cache
 E:\ApiLogin\Login\Login\obj\Debug\net5.0\ref\Login.dll
+E:\ApiLogin\Login\Login\bin\Debug\net5.0\AutoMapper.dll
+E:\ApiLogin\Login\Login\bin\Debug\net5.0\FluentResults.dll
+E:\ApiLogin\Login\Login\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\ApiLogin\Login\Login\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\ApiLogin\Login\Login\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\ApiLogin\Login\Login\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+E:\ApiLogin\Login\Login\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+E:\ApiLogin\Login\Login\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

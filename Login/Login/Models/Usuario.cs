@@ -7,8 +7,8 @@ namespace Login.Models
         [Required]
         public int Id { get; set; }
         [Required]
-        public string Email { get; set; }
+        public string UserName { get; set; }
         [Required]
-        public string Senha { get; set;  }
+        public string Email { get; set; }
     }
 }
