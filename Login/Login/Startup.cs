@@ -32,9 +32,12 @@ namespace Login
         {
             services.AddDbContext<UserContext>(
                x => x.UseSqlServer(Configuration.GetConnectionString("UserConnection")));
-            services.AddIdentity<IdentityUser<int>, IdentityRole<int>>()
-                .AddEntityFrameworkStores<UserContext>();
+            services.AddIdentity<IdentityUser<int>, IdentityRole<int>>(props =>
+            {
+                props.User.RequireUniqueEmail = true; //não pode ter 1 email cadastrado em 2 contas, ou seja email unico por conta
+            }).AddEntityFrameworkStores<UserContext>();
             services.AddScoped<UsuarioService, UsuarioService>();
+            services.AddScoped<LoginService, LoginService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
