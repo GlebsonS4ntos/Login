@@ -22,7 +22,7 @@ namespace Login.Controllers
         public IActionResult Login(LoginRequest request)
         {
             Result resultado = _service.Login(request);
-            return resultado.IsSuccess? Ok() : StatusCode(500, resultado.Errors.FirstOrDefault());
+            return resultado.IsSuccess? Ok(resultado.Successes.FirstOrDefault()) : StatusCode(500, resultado.Errors.FirstOrDefault());
         }
     }
 }

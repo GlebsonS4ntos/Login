@@ -76,3 +76,4 @@ E:\ApiLogin\Login\Login\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjectio
 E:\ApiLogin\Login\Login\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 E:\ApiLogin\Login\Login\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 E:\ApiLogin\Login\Login\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+E:\ApiLogin\Login\Login\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll
